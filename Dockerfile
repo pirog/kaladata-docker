@@ -17,14 +17,14 @@ RUN chmod 755 /data/backups
 
 # This is a weird bug that sets the permissions incorrectly on an empty VOLUME
 # https://github.com/dotcloud/docker/issues/2969
-RUN touch /data/data/.docker-volume-perm-fix
-RUN touch /data/code/.docker-volume-perm-fix
-RUN touch /data/files/.docker-volume-perm-fix
-RUN touch /data/backups/.docker-volume-perm-fix
-RUN chmod 666 /data/data/.docker-volume-perm-fix
-RUN chmod 666 /data/code/.docker-volume-perm-fix
-RUN chmod 666 /data/files/.docker-volume-perm-fix
-RUN chmod 666 /data/backups/.docker-volume-perm-fix
+RUN touch /data/data/.delete-me
+RUN touch /data/code/.delete-me
+RUN touch /data/files/.delete-me
+RUN touch /data/backups/.delete-me
+RUN chmod 666 /data/data/.delete-me
+RUN chmod 666 /data/code/.delete-me
+RUN chmod 666 /data/files/.delete-me
+RUN chmod 666 /data/backups/.delete-me
 
 VOLUME ["/data/data", "/data/code", "/data/files"]
 
