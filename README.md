@@ -17,7 +17,7 @@ non-vcs files = /data/files
 
 ```
 $ docker pull pirog/kaladata-docker
-$ docker run -name MY_DATA_VOLUME pirog/kaladata-docker
+$ docker run --name=MY_DATA_VOLUME pirog/kaladata-docker
 ```
 
 ## Mounting on a container
